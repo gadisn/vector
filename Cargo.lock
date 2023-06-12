@@ -5620,9 +5620,9 @@ checksum = "ff011a302c396a5197692431fc1948019154afc178baf7d8e37367442a4601cf"
 
 [[package]]
 name = "openssl-src"
-version = "111.25.0+1.1.1t"
+version = "300.0.11+3.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3173cd3626c43e3854b1b727422a276e568d9ec5fe8cec197822cf52cfb743d6"
+checksum = "181e2429088818099075f6ccf30e6d096a513c46e7e0b946a4dde055c35cb17a"
 dependencies = [
  "cc",
 ]
@@ -5630,8 +5630,7 @@ dependencies = [
 [[package]]
 name = "openssl-sys"
 version = "0.9.88"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c2ce0f250f34a308dcfdbb351f511359857d4ed2134ba715a4eadd46e1ffd617"
+source = "git+https://github.com/vectordotdev/rust-openssl.git?tag=openssl-sys-v0.9.88+3.0.0#c20d6c72fdc78e70b2a608719a261bc31002dab7"
 dependencies = [
  "cc",
  "libc",
@@ -9204,7 +9203,6 @@ dependencies = [
  "opendal",
  "openssl",
  "openssl-probe",
- "openssl-src",
  "opentelemetry-proto",
  "ordered-float 3.7.0",
  "paste",
